@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="weducation_logo.webp">
     <title>Weducation - Contato e Documentação</title>
     <style>
         :root {
@@ -117,7 +118,7 @@
             color: #888;
         }
 
-        .phone-link {
+        .contact-email {
             font-size: 1.2rem;
             font-weight: bold;
             color: var(--text-color);
@@ -131,10 +132,9 @@
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Weducation</h1>
-        <p>Soluções educacionais e suporte especializado</p>
+        <img src="weducation_logo_lg.webp" alt="Weducation Logo" class="logo">
+        <p>Inovação e Tecnologia para a Educação</p>
     </header>
 
     <main>
@@ -158,16 +158,18 @@
             <div class="card">
                 <div>
                     <h2>Contato</h2>
-                    <p>Precisa de ajuda imediata? Entre em contato conosco por telefone.</p>
                 </div>
-                <a href="tel:+5511999999999" class="phone-link">(11) 99999-9999</a>
+                <a href="mailto:imprensa@weducation.com.br" class="contact-email">imprensa@weducation.com.br</a>
             </div>
         </div>
     </main>
 
     <footer>
-        &copy; 2026 Weducation. Todos os direitos reservados.
+        &copy; <span id="year"></span> Weducation. Todos os direitos reservados.
     </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
